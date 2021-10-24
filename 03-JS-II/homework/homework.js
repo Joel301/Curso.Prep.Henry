@@ -148,13 +148,13 @@ function esPrimo(numero) {
     return false;
   }
   console.log('blip');
-  for (let index = numero-1; index >= 1; index--) {
+  for (let index = numero-1; index > 1; index--) {
     console.log(index,numero);
-    if (numero % index != 0){
+    if (numero % index == 0){
       return false;
     }
   }
-  return false;
+  return true;
 }
 
 function esVerdadero(valor){
